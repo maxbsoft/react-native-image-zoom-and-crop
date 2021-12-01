@@ -79,18 +79,18 @@ var ImageZoomAndCrop = /** @class */ (function (_super) {
                 var fittedSize = { width: 0, height: 0 };
                 var scale = 1;
                 if (width > height) {
-                    var ratio = w / height;
+                    var ratio = areaWidth / height;
                     fittedSize.width = width * ratio;
-                    fittedSize.height = w;
+                    fittedSize.height = areaWidth;
                 }
                 else if (width < height) {
-                    var ratio = w / width;
-                    fittedSize.width = w;
+                    var ratio = areaWidth / width;
+                    fittedSize.width = areaWidth;
                     fittedSize.height = height * ratio;
                 }
                 else if (width === height) {
-                    fittedSize.width = w;
-                    fittedSize.height = w;
+                    fittedSize.width = areaWidth;
+                    fittedSize.height = areaWidth;
                 }
                 if (areaWidth < areaHeight || areaWidth === areaHeight) {
                     if (width < height) {
