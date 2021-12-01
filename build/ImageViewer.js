@@ -43,7 +43,7 @@ var Value = react_native_reanimated_1.default.Value, event = react_native_reanim
 var styles = react_native_1.StyleSheet.create({
     panGestureInner: __assign(__assign({}, react_native_1.StyleSheet.absoluteFillObject), { alignItems: 'center', justifyContent: 'center' }),
     imageWrapper: {
-        overflow: 'hidden',
+        overflow: 'visible',
         alignItems: 'center',
         justifyContent: 'center',
     },
