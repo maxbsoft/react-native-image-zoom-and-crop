@@ -189,16 +189,16 @@ class ImageZoomAndCrop extends PureComponent<IProps, IState> {
         let scale = 1;
 
         if (width > height) {
-          const ratio = w / height;
+          const ratio = areaWidth / height;
           fittedSize.width = width * ratio;
-          fittedSize.height = w;
+          fittedSize.height = areaWidth;
         } else if (width < height) {
-          const ratio = w / width;
-          fittedSize.width = w;
+          const ratio = areaWidth / width;
+          fittedSize.width = areaWidth;
           fittedSize.height = height * ratio;
         } else if (width === height) {
-          fittedSize.width = w;
-          fittedSize.height = w;
+          fittedSize.width = areaWidth;
+          fittedSize.height = areaWidth;
         }
 
         if (areaWidth < areaHeight || areaWidth === areaHeight) {
