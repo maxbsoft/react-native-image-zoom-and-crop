@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
   },
 
   imageWrapper: {
-    overflow: 'hidden',
+    overflow: 'visible',
     alignItems: 'center',
     justifyContent: 'center',
   },
